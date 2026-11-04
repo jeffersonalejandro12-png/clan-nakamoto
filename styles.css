@@ -1,0 +1,35 @@
+/* ===================================================
+   PALETA DE COLOLES - CLAN NAKAMOTO
+   =================================================== */
+:root {
+    --nakamoto-ghost: #F0EFF4;
+    --nakamoto-onyx: #000F08;
+    --nakamoto-indigo: #502274;
+    --nakamoto-saffron: #E1BC29;
+}
+
+/* Aplicación de colores base corporativos */
+body {
+    background-color: var(--nakamoto-ghost) !important;
+    color: var(--nakamoto-onyx) !important;
+}
+
+/* Clases de utilidad personalizadas para la identidad del clan */
+.bg-nakamoto-onyx { background-color: var(--nakamoto-onyx); }
+.bg-nakamoto-indigo { background-color: var(--nakamoto-indigo); }
+.bg-nakamoto-saffron { background-color: var(--nakamoto-saffron); }
+
+.text-nakamoto-indigo { color: var(--nakamoto-indigo); }
+.text-nakamoto-saffron { color: var(--nakamoto-saffron); }
+
+.btn-nakamoto {
+    background-color: var(--nakamoto-saffron);
+    color: var(--nakamoto-onyx);
+    font-weight: 700;
+    border: none;
+}
+
+.btn-nakamoto:hover {
+    background-color: #c9a622;
+    color: var(--nakamoto-onyx);
+}
