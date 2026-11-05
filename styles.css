@@ -1,35 +1,53 @@
-/* ===================================================
-   PALETA DE COLOLES - CLAN NAKAMOTO
-   =================================================== */
+/*ESTILOS BASE - CLAN NAKAMOTO*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap');
+
 :root {
-    --nakamoto-ghost: #F0EFF4;
-    --nakamoto-onyx: #000F08;
+    --nakamoto-black: #000000;
+    --nakamoto-onyx: #0a0a0a;
     --nakamoto-indigo: #502274;
     --nakamoto-saffron: #E1BC29;
+    --nakamoto-ghost: #F0EFF4;
 }
 
-/* Aplicación de colores base corporativos */
-body {
-    background-color: var(--nakamoto-ghost) !important;
-    color: var(--nakamoto-onyx) !important;
+/* Forzar negro puro y tipografía en toda la página */
+html, body {
+    background-color: #000000 !important;
+    color: var(--nakamoto-ghost) !important;
+    font-family: 'Fira Code', monospace !important;
+    margin: 0;
+    padding: 0;
 }
 
-/* Clases de utilidad personalizadas para la identidad del clan */
-.bg-nakamoto-onyx { background-color: var(--nakamoto-onyx); }
-.bg-nakamoto-indigo { background-color: var(--nakamoto-indigo); }
-.bg-nakamoto-saffron { background-color: var(--nakamoto-saffron); }
+/* Clases de utilidad corporativa */
+.bg-nakamoto-onyx {
+    background-color: var(--nakamoto-onyx) !important;
+}
 
-.text-nakamoto-indigo { color: var(--nakamoto-indigo); }
-.text-nakamoto-saffron { color: var(--nakamoto-saffron); }
+.bg-nakamoto-indigo {
+    background-color: var(--nakamoto-indigo) !important;
+}
+
+.bg-nakamoto-saffron {
+    background-color: var(--nakamoto-saffron) !important;
+}
+
+.text-nakamoto-saffron {
+    color: var(--nakamoto-saffron) !important;
+}
 
 .btn-nakamoto {
-    background-color: var(--nakamoto-saffron);
-    color: var(--nakamoto-onyx);
+    background-color: var(--nakamoto-saffron) !important;
+    color: var(--nakamoto-black) !important;
     font-weight: 700;
     border: none;
 }
 
 .btn-nakamoto:hover {
-    background-color: #c9a622;
-    color: var(--nakamoto-onyx);
+    background-color: #c9a622 !important;
+    color: var(--nakamoto-black) !important;
+}
+
+.text-white-hover:hover {
+    color: #ffffff !important;
 }

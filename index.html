@@ -6,127 +6,42 @@
     <title>Clan Nakamoto | Home</title>
     <!-- Bootstrap 5.3 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos Propios -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-light text-dark">
+<body>
 
     <!-- Navegación Principal -->
     <header class="container py-3">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-3 px-4 shadow-sm">
-            <a class="navbar-brand fw-bold font-monospace" href="#">⚡ Clan-Nakamoto </a>
-            <div class="ms-auto">
-                <span class="badge bg-success font-monospace">Cohorte 8 • Riwi</span>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-nakamoto-onyx rounded-3 px-4 shadow-sm border border-secondary border-opacity-25">
+            <!-- 1. Logo y Nombre -->
+            <a class="navbar-brand fw-bold text-white d-flex align-items-center gap-2" href="index.html">
+                <span>⚡</span> Clan-Nakamoto
+            </a>
+
+            <!-- Botón móvil -->
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- 2 y 3. Enlaces de texto -->
+                <ul class="navbar-nav mx-auto gap-lg-4 align-items-center py-2 py-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 text-white-hover" href="#anuncios">Anuncios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 text-white-hover" href="#premiacion">Premiación</a>
+                    </li>
+                </ul>
+
+                <!-- 4. Botón Aprender a la derecha -->
+                <div class="d-flex ms-lg-auto py-2 py-lg-0">
+                    <a href="#aprender" class="btn bg-nakamoto-indigo text-white fw-bold px-4 py-2 rounded-2 shadow-sm text-decoration-none">Aprender</a>
+                </div>
             </div>
         </nav>
     </header>
-
-    <main class="container my-4">
-        
-        <!-- 1. Hero / Portada (Inspiración Learn) -->
-        <section class="p-5 mb-5 bg-white rounded-4 shadow-sm border">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <span class="badge bg-primary bg-opacity-10 text-primary mb-3 fw-semibold px-3 py-2 rounded-pill">Centro de Comando &amp; Aprendizaje</span>
-                    <h1 class="display-5 fw-bold mb-3">Construyendo código sin intermediarios.</h1>
-                    <p class="lead text-muted">El espacio oficial del Clan Nakamoto para centralizar recursos, celebrar los mejores proyectos de la semana y mantenernos alineados.</p>
-                </div>
-                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
-                    <a href="#recursos" class="btn btn-dark btn-lg w-100 w-lg-auto shadow-sm">Explorar Recursos &rarr;</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 2. Podio de la Semana (Proyecto Destacado) -->
-        <section class="mb-5">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <h2 class="h3 fw-bold mb-0">🏆 Proyecto de la Semana</h2>
-                <span class="text-muted small">Actualizado semanalmente</span>
-            </div>
-            <div class="card border-0 shadow-sm bg-dark text-white p-4 p-md-5 rounded-4">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <span class="badge bg-warning text-dark mb-2 fw-bold">Ganador del Premio Semanal</span>
-                        <h3 class="h2 fw-bold mb-3">Landing Page Interactiva con Animaciones CSS</h3>
-                        <p class="text-white-50 mb-4">Desarrollado con un despliegue impecable de componentes semánticos, excelente rendimiento en móviles y una atención al detalle sobresaliente.</p>
-                        <a href="https://github.com" target="_blank" class="btn btn-warning fw-bold px-4 py-2">Ver Repositorio del Proyecto</a>
-                    </div>
-                    <div class="col-lg-5 mt-4 mt-lg-0 text-center">
-                        <div class="p-4 bg-secondary bg-opacity-25 rounded-3 border border-secondary">
-                            <p class="text-uppercase fw-bold text-warning small mb-1">Autor Destacado</p>
-                            <h4 class="h5 mb-0">Miembro del Clan Nakamoto</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. Eventos y Anuncios Importantes -->
-        <section class="mb-5">
-            <h2 class="h3 fw-bold mb-4">📢 Próximos Eventos y Avisos</h2>
-            <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm p-4">
-                        <span class="badge bg-danger bg-opacity-10 text-danger mb-3 fw-semibold align-self-start px-2 py-1">Urgente</span>
-                        <h3 class="h5 fw-bold">Entrega de Reto Final Bootstrap</h3>
-                        <p class="text-muted small mb-3">Revisión general de código limpio, validación de grilla y pruebas de accesibilidad.</p>
-                        <span class="text-dark small fw-bold mt-auto">📅 Viernes, 8:00 AM</span>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm p-4">
-                        <span class="badge bg-info bg-opacity-10 text-info mb-3 fw-semibold align-self-start px-2 py-1">Taller</span>
-                        <h3 class="h5 fw-bold">Code Review Colaborativo</h3>
-                        <p class="text-muted small mb-3">Sesión abierta en clan para auditar repositorios y resolver dudas de Git/GitHub.</p>
-                        <span class="text-dark small fw-bold mt-auto">📅 Jueves, 3:00 PM</span>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm p-4">
-                        <span class="badge bg-success bg-opacity-10 text-success mb-3 fw-semibold align-self-start px-2 py-1">Comunidad</span>
-                        <h3 class="h5 fw-bold">Café y Debugging</h3>
-                        <p class="text-muted small mb-3">Espacio libre para compartir memes, debatir sobre arquitectura y destrabar bugs.</p>
-                        <span class="text-dark small fw-bold mt-auto">📅 Miércoles, 5:00 PM</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. Centro de Recursos (Estilo Learn) -->
-        <section id="recursos" class="mb-5">
-            <h2 class="h3 fw-bold mb-4">📚 Recursos de Aprendizaje y Guías</h2>
-            <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <article class="card h-100 border-0 shadow-sm p-4 d-flex flex-column">
-                        <h3 class="h5 fw-bold mb-2">Fundamentos de Bootstrap 5.3</h3>
-                        <p class="text-muted small flex-grow-1">Documentación interna sobre cómo usar el sistema de retículas y clases utilitarias sin perder semántica.</p>
-                        <a href="#" class="text-decoration-none fw-bold text-primary mt-3">Acceder al recurso &rarr;</a>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <article class="card h-100 border-0 shadow-sm p-4 d-flex flex-column">
-                        <h3 class="h5 fw-bold mb-2">Cheat Sheet de Git &amp; GitHub</h3>
-                        <p class="text-muted small flex-grow-1">Comandos esenciales para mantener un flujo de trabajo limpio con commits descriptivos y ramas organizadas.</p>
-                        <a href="#" class="text-decoration-none fw-bold text-primary mt-3">Acceder al recurso &rarr;</a>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <article class="card h-100 border-0 shadow-sm p-4 d-flex flex-column">
-                        <h3 class="h5 fw-bold mb-2">Accesibilidad y HTML Semántico</h3>
-                        <p class="text-muted small flex-grow-1">Por qué no debemos abusar de la "sopa de divs" y cómo usar etiquetas como article y section correctamente.</p>
-                        <a href="#" class="text-decoration-none fw-bold text-primary mt-3">Acceder al recurso &rarr;</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Pie de página -->
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center text-md-start d-flex flex-column flex-md-row justify-content-between align-items-center">
-            <p class="mb-2 mb-md-0 small">&copy; 2026 Clan Nakamoto. Diseñado para aprender, construir y compartir.</p>
-            <span class="text-white-50 small font-monospace">Powered by Bootstrap 5.3 &amp; Git</span>
-        </div>
-    </footer>
 
     <!-- Bootstrap 5.3 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
