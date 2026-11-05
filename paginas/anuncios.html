@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncios | Clan Nakamoto</title>
+    <!-- Bootstrap 5.3 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos Propios -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- Navegación Principal -->
+    <header class="container py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-nakamoto-onyx rounded-3 px-4 shadow-sm border border-secondary border-opacity-25">
+            <a class="navbar-brand fw-bold text-white d-flex align-items-center gap-2" href="../index.html">
+                <span>⚡</span> Clan-Nakamoto
+            </a>
+
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-lg-3 align-items-center py-2 py-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold active" href="anuncios.html">Anuncios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 text-white-hover" href="premiacion.html">Premiación</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="aprender.html" class="btn bg-nakamoto-indigo text-white fw-bold px-4 py-2 rounded-5 shadow-sm text-decoration-none">Aprender</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        
+        <!-- Header de la sección -->
+        <div class="mb-4 pb-2 border-bottom border-secondary border-opacity-25">
+            <h1 class="h2 fw-bold text-white mb-2">📢 Anuncios y Convocatorias</h1>
+            <p class="text-white-50 small mb-0">Bitácora de retos, talleres y actividades activas en el clan.</p>
+        </div>
+
+        <!-- Feed de Anuncios -->
+        <div class="row g-4">
+            
+            <!-- Anuncio 1 -->
+            <div class="col-12 col-lg-8">
+                <article class="glass-card p-4 p-md-5 rounded-4 mb-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="badge bg-nakamoto-saffron text-dark fw-bold px-3 py-2">Hackathon</span>
+                        <span class="text-white-50 small">Publicado: Reciente</span>
+                    </div>
+                    <h2 class="h3 fw-bold text-white mb-3">Desafío de Código Abierto Cohorte 8</h2>
+                    <p class="text-white-50 mb-4">
+                        Prepárate para el reto inter-clanes donde pondremos a prueba nuestras habilidades en arquitectura web semántica, layouts fluidos con Bootstrap 5.3 y rigor técnico. 
+                    </p>
+                    <div class="d-flex gap-3 align-items-center">
+                        <a href="#" class="btn btn-nakamoto px-4 py-2">Inscribir equipo &rarr;</a>
+                        <span class="text-white-50 small">Requisito: Repositorio en GitHub</span>
+                    </div>
+                </article>
+
+                <article class="glass-card p-4 p-md-5 rounded-4 mb-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="badge bg-nakamoto-indigo text-white fw-bold px-3 py-2">Taller</span>
+                        <span class="text-white-50 small">Próximo Jueves</span>
+                    </div>
+                    <h2 class="h3 fw-bold text-white mb-3">Auditoría de Código y Buenas Prácticas</h2>
+                    <p class="text-white-50 mb-4">
+                        Sesión técnica en directo donde revisaremos repositorios del clan, estandarización de commits atómicos y limpieza estructural en proyectos HTML/CSS.
+                    </p>
+                    <a href="#" class="btn btn-nakamoto px-4 py-2">Agendar recordatorio &rarr;</a>
+                </article>
+
+                <article class="glass-card p-4 p-md-5 rounded-4 mb-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="badge bg-success text-white fw-bold px-3 py-2">Comunidad</span>
+                        <span class="text-white-50 small">Semanal</span>
+                    </div>
+                    <h2 class="h3 fw-bold text-white mb-3">Encuentro de Debugging y Café</h2>
+                    <p class="text-white-50 mb-4">
+                        Espacio de co-working virtual abierto para destrabar errores complejos de sintaxis, repensar grillas responsivas y compartir perspectivas.
+                    </p>
+                    <a href="#" class="btn btn-nakamoto px-4 py-2">Unirse al canal &rarr;</a>
+                </article>
+            </div>
+
+            <!-- Sidebar Informativo -->
+            <div class="col-12 col-lg-4">
+                <aside class="bg-nakamoto-onyx p-4 rounded-4 border border-secondary border-opacity-25 text-white sticky-top" style="top: 2rem;">
+                    <h3 class="h5 fw-bold mb-3 text-nakamoto-saffron">📌 Reglas de Publicación</h3>
+                    <ul class="text-white-50 small ps-3 mb-4">
+                        <li class="mb-2">Todo anuncio debe contar con un entregable o acción clara.</li>
+                        <li class="mb-2">Manejo estricto de fechas límite y ramas Git.</li>
+                        <li class="mb-2">Prioridad al código limpio y accesible (a11y).</li>
+                    </ul>
+                    <hr class="border-secondary border-opacity-50">
+                    <div class="p-3 bg-black rounded-3 border border-secondary">
+                        <span class="small d-block text-white-50 mb-1">Estado del Clan:</span>
+                        <span class="fw-bold text-white">⚡ Cohorte 8 Activa</span>
+                    </div>
+                </aside>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-nakamoto-onyx text-white py-4 mt-5 container rounded-top-4 border-top border-secondary border-opacity-25">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center px-3">
+            <p class="mb-2 mb-md-0 small">&copy; 2026 Clan Nakamoto. Diseñado para aprender, construir y compartir.</p>
+            <span class="text-white-50 small">Powered by Bootstrap 5.3 &amp; Git</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
