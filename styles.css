@@ -1,6 +1,7 @@
-/*ESTILOS BASE - CLAN NAKAMOTO*/
-
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap');
+/* ===================================================
+   IMPORTACIÓN DE TIPOGRAFÍA: Google Sans Code
+   =================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..700;1,300..700&family=Fira+Code:wght@300;400;600;700&display=swap');
 
 :root {
     --nakamoto-black: #000000;
@@ -10,31 +11,32 @@
     --nakamoto-ghost: #F0EFF4;
 }
 
-/* Forzar negro puro y tipografía en toda la página */
+/* Aplicación global en todo el sitio */
 html, body {
     background-color: #000000 !important;
-    color: var(--nakamoto-ghost) !important;
-    font-family: 'Fira Code', monospace !important;
-    margin: 0;
-    padding: 0;
+    color: #F0EFF4 !important;
+    font-family: 'Google Sans Code', 'Fira Code', monospace !important;
 }
 
-/* Clases de utilidad corporativa */
-.bg-nakamoto-onyx {
-    background-color: var(--nakamoto-onyx) !important;
+/* Forzar en encabezados, navegación, botones y etiquetas */
+h1, h2, h3, h4, h5, h6, 
+.navbar-brand, .nav-link, .btn, .badge, p, span, a {
+    font-family: 'Google Sans Code', 'Fira Code', monospace !important;
 }
 
-.bg-nakamoto-indigo {
-    background-color: var(--nakamoto-indigo) !important;
+/* Clases de utilidad */
+.bg-nakamoto-onyx { 
+    background-color: var(--nakamoto-onyx) !important; 
+}
+.bg-nakamoto-indigo { 
+    background-color: var(--nakamoto-indigo) !important; 
+}
+.bg-nakamoto-saffron { 
+    background-color: var(--nakamoto-saffron) !important; 
 }
 
-.bg-nakamoto-saffron {
-    background-color: var(--nakamoto-saffron) !important;
-}
-
-.text-nakamoto-saffron {
-    color: var(--nakamoto-saffron) !important;
-}
+.text-nakamoto-indigo { color: var(--nakamoto-indigo) !important; }
+.text-nakamoto-saffron { color: var(--nakamoto-saffron) !important; }
 
 .btn-nakamoto {
     background-color: var(--nakamoto-saffron) !important;
@@ -50,4 +52,12 @@ html, body {
 
 .text-white-hover:hover {
     color: #ffffff !important;
+}
+
+/* Efecto Blur para tarjetas del Hero */
+.glass-card {
+    background-color: rgba(10, 10, 10, 0.75) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }
